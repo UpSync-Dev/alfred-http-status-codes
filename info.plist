@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>uk.co.upsync.http</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>97EA3280-A6FD-40B9-8A2F-72B37144B52F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B23A1A21-D1E7-4C17-B82A-78888AA6C47F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B23A1A21-D1E7-4C17-B82A-78888AA6C47F</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Muhammed Ahmed</string>
+	<key>description</key>
+	<string>Returns HTTP status code information on the https://httpstatuses.com/ website</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>HTTP Status Codes</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://httpstatuses.com/{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B23A1A21-D1E7-4C17-B82A-78888AA6C47F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"imagefile":"eb721c583f7ba9c934e754aecef7eee2b1d2fb89.png","title":"100 - Continue","arg":"100","subtitle":"The initial part of a request has been received and has not yet been rejected by the server. The server intends to send a final response after the request has been fully received and acted upon."},{"imagefile":"eb721c583f7ba9c934e754aecef7eee2b1d2fb89.png","title":"101 - Switching Protocols","arg":"101","subtitle":"The server understands and is willing to comply with the client's request, via the Upgrade header field, for a change in the application protocol being used on this connection."},{"imagefile":"eb721c583f7ba9c934e754aecef7eee2b1d2fb89.png","title":"102 - Processing","arg":"102","subtitle":"An interim response used to inform the client that the server has accepted the complete request, but has not yet completed it."},{"imagefile":"19342110133e7343e72b4588d02faf83f6edd24e.png","title":"200 - Ok","arg":"200","subtitle":"The request has succeeded."},{"imagefile":"19342110133e7343e72b4588d02faf83f6edd24e.png","title":"201 - Created","arg":"201","subtitle":"The request has been fulfilled and has resulted in one or more new resources being created."},{"imagefile":"19342110133e7343e72b4588d02faf83f6edd24e.png","title":"202 - Accepted","arg":"202","subtitle":"The request has been accepted for processing, but the processing has not been completed. The request might or might not eventually be acted upon, as it might be disallowed when processing actually takes place."},{"imagefile":"19342110133e7343e72b4588d02faf83f6edd24e.png","title":"203 - Non-Authoritative Information","arg":"203","subtitle":"The request was successful but the enclosed payload has been modified from that of the origin server's 200 OK response by a transforming proxy."},{"imagefile":"19342110133e7343e72b4588d02faf83f6edd24e.png","title":"204 - No Content","arg":"204","subtitle":"The server has successfully fulfilled the request and that there is no additional content to send in the response payload body."},{"imagefile":"19342110133e7343e72b4588d02faf83f6edd24e.png","title":"205 - Reset Content","arg":"205","subtitle":"The server has fulfilled the request and desires that the user agent reset the \"document view\", which caused the request to be sent, to its original state as received from the origin server."},{"imagefile":"19342110133e7343e72b4588d02faf83f6edd24e.png","title":"206 - Partial Content","arg":"206","subtitle":"The server is successfully fulfilling a range request for the target resource by transferring one or more parts of the selected representation that correspond to the satisfiable ranges found in the request's Range header field."},{"imagefile":"19342110133e7343e72b4588d02faf83f6edd24e.png","title":"207 - Multi-Status","arg":"207","subtitle":"A Multi-Status response conveys information about multiple resources in situations where multiple status codes might be appropriate."},{"imagefile":"19342110133e7343e72b4588d02faf83f6edd24e.png","title":"208 - Already Reported","arg":"208","subtitle":"Used inside a DAV: propstat response element to avoid enumerating the internal members of multiple bindings to the same collection repeatedly."},{"imagefile":"19342110133e7343e72b4588d02faf83f6edd24e.png","title":"226 - Im Used","arg":"226","subtitle":"The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance."},{"imagefile":"8775db17408e9f6c061e2cd00069f14bdec45e24.png","title":"300 - Multiple Choices","arg":"300","subtitle":"The target resource has more than one representation, each with its own more specific identifier, and information about the alternatives is being provided so that the user (or user agent) can select a preferred representation by redirecting its request to one or more of those identifiers."},{"imagefile":"8775db17408e9f6c061e2cd00069f14bdec45e24.png","title":"301 - Moved Permanently","arg":"301","subtitle":"The target resource has been assigned a new permanent URI and any future references to this resource ought to use one of the enclosed URIs."},{"imagefile":"8775db17408e9f6c061e2cd00069f14bdec45e24.png","title":"302 - Found","arg":"302","subtitle":"The target resource resides temporarily under a different URI. Since the redirection might be altered on occasion, the client ought to continue to use the effective request URI for future requests."},{"imagefile":"8775db17408e9f6c061e2cd00069f14bdec45e24.png","title":"303 - See Other","arg":"303","subtitle":"The server is redirecting the user agent to a different resource, as indicated by a URI in the Location header field, which is intended to provide an indirect response to the original request."},{"imagefile":"8775db17408e9f6c061e2cd00069f14bdec45e24.png","title":"304 - Not Modified","arg":"304","subtitle":"A conditional GET or HEAD request has been received and would have resulted in a 200 OK response if it were not for the fact that the condition evaluated to false."},{"imagefile":"8775db17408e9f6c061e2cd00069f14bdec45e24.png","title":"305 - Use Proxy","arg":"305","subtitle":"Defined in a previous version of this specification and is now deprecated, due to security concerns regarding in-band configuration of a proxy."},{"imagefile":"8775db17408e9f6c061e2cd00069f14bdec45e24.png","title":"307 - Temporary Redirect","arg":"307","subtitle":"The target resource resides temporarily under a different URI and the user agent MUST NOT change the request method if it performs an automatic redirection to that URI."},{"imagefile":"8775db17408e9f6c061e2cd00069f14bdec45e24.png","title":"308 - Permanent Redirect","arg":"308","subtitle":"The target resource has been assigned a new permanent URI and any future references to this resource ought to use one of the enclosed URIs."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"400 - Bad Request","arg":"400","subtitle":"The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing)."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"401 - Unauthorized","arg":"401","subtitle":"The request has not been applied because it lacks valid authentication credentials for the target resource."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"402 - Payment Required","arg":"402","subtitle":"Reserved for future use."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"403 - Forbidden","arg":"403","subtitle":"The server understood the request but refuses to authorize it."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"404 - Not Found","arg":"404","subtitle":"The origin server did not find a current representation for the target resource or is not willing to disclose that one exists."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"405 - Method Not Allowed","arg":"405","subtitle":"The method received in the request-line is known by the origin server but not supported by the target resource."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"406 - Not Acceptable","arg":"406","subtitle":"The target resource does not have a current representation that would be acceptable to the user agent, according to the proactive negotiation header fields received in the request, and the server is unwilling to supply a default representation."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"407 - Proxy Authentication Required","arg":"407","subtitle":"Similar to 401 Unauthorized, but it indicates that the client needs to authenticate itself in order to use a proxy."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"408 - Request Timeout","arg":"408","subtitle":"The server did not receive a complete request message within the time that it was prepared to wait."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"409 - Conflict","arg":"409","subtitle":"The request could not be completed due to a conflict with the current state of the target resource. This code is used in situations where the user might be able to resolve the conflict and resubmit the request."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"410 - Gone","arg":"410","subtitle":"The target resource is no longer available at the origin server and that this condition is likely to be permanent."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"411 - Length Required","arg":"411","subtitle":"The server refuses to accept the request without a defined Content-Length."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"412 - Precondition Failed","arg":"412","subtitle":"One or more conditions given in the request header fields evaluated to false when tested on the server."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"413 - Payload Too Large","arg":"413","subtitle":"The server is refusing to process a request because the request payload is larger than the server is willing or able to process."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"414 - Request-Uri Too Long","arg":"414","subtitle":"The server is refusing to service the request because the request-target is longer than the server is willing to interpret."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"415 - Unsupported Media Type","arg":"415","subtitle":"The origin server is refusing to service the request because the payload is in a format not supported by this method on the target resource."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"416 - Requested Range Not Satisfiable","arg":"416","subtitle":"None of the ranges in the request's Range header field overlap the current extent of the selected resource or that the set of ranges requested has been rejected due to invalid ranges or an excessive request of small or overlapping ranges."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"417 - Expectation Failed","arg":"417","subtitle":"The expectation given in the request's Expect header field could not be met by at least one of the inbound servers."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"418 - I'm a Teapot","arg":"418","subtitle":"Any attempt to brew coffee with a teapot should result in the error code \"418 I'm a teapot\". The resulting entity body MAY be short and stout."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"421 - Misdirected Request","arg":"421","subtitle":"The request was directed at a server that is not able to produce a response. This can be sent by a server that is not configured to produce responses for the combination of scheme and authority that are included in the request URI."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"422 - Unprocessable Entity","arg":"422","subtitle":"The server understands the content type of the request entity (hence a 415 Unsupported Media Type status code is inappropriate), and the syntax of the request entity is correct (thus a 400 Bad Request status code is inappropriate) but was unable to process the contained instructions."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"423 - Locked","arg":"423","subtitle":"The source or destination resource of a method is locked."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"424 - Failed Dependency","arg":"424","subtitle":"The method could not be performed on the resource because the requested action depended on another action and that action failed."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"426 - Upgrade Required","arg":"426","subtitle":"The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"428 - Precondition Required","arg":"428","subtitle":"The origin server requires the request to be conditional."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"429 - Too Many Requests","arg":"429","subtitle":"The user has sent too many requests in a given amount of time (\"rate limiting\")."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"431 - Request Header Fields Too Large","arg":"431","subtitle":"The server is unwilling to process the request because its header fields are too large. The request MAY be resubmitted after reducing the size of the request header fields."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"444 - Connection Closed Without Response","arg":"444","subtitle":"A non-standard status code used to instruct nginx to close the connection without sending a response to the client, most commonly used to deny malicious or malformed requests."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"451 - Unavailable For Legal Reasons","arg":"451","subtitle":"The server is denying access to the resource as a consequence of a legal demand."},{"imagefile":"d8e5787304db7c009a07bc0e3ad756fb871ddcfb.png","title":"499 - Client Closed Request","arg":"499","subtitle":"A non-standard status code introduced by nginx for the case when a client closes the connection while nginx is processing the request."},{"imagefile":"9b4798f4074f75ad90c9f9b53224a7c0177844ad.png","title":"500 - Internal Server Error","arg":"500","subtitle":"The server encountered an unexpected condition that prevented it from fulfilling the request."},{"imagefile":"9b4798f4074f75ad90c9f9b53224a7c0177844ad.png","title":"501 - Not Implemented","arg":"501","subtitle":"The server does not support the functionality required to fulfill the request."},{"imagefile":"9b4798f4074f75ad90c9f9b53224a7c0177844ad.png","title":"502 - Bad Gateway","arg":"502","subtitle":"The server, while acting as a gateway or proxy, received an invalid response from an inbound server it accessed while attempting to fulfill the request."},{"imagefile":"9b4798f4074f75ad90c9f9b53224a7c0177844ad.png","title":"503 - Service Unavailable","arg":"503","subtitle":"The server is currently unable to handle the request due to a temporary overload or scheduled maintenance, which will likely be alleviated after some delay."},{"imagefile":"9b4798f4074f75ad90c9f9b53224a7c0177844ad.png","title":"504 - Gateway Timeout","arg":"504","subtitle":"The server, while acting as a gateway or proxy, did not receive a timely response from an upstream server it needed to access in order to complete the request."},{"imagefile":"9b4798f4074f75ad90c9f9b53224a7c0177844ad.png","title":"505 - Http Version Not Supported","arg":"505","subtitle":"The server does not support, or refuses to support, the major version of HTTP that was used in the request message."},{"imagefile":"9b4798f4074f75ad90c9f9b53224a7c0177844ad.png","title":"506 - Variant Also Negotiates","arg":"506","subtitle":"The server has an internal configuration error: the chosen variant resource is configured to engage in transparent content negotiation itself, and is therefore not a proper end point in the negotiation process."},{"imagefile":"9b4798f4074f75ad90c9f9b53224a7c0177844ad.png","title":"507 - Insufficient Storage","arg":"507","subtitle":"The method could not be performed on the resource because the server is unable to store the representation needed to successfully complete the request."},{"imagefile":"9b4798f4074f75ad90c9f9b53224a7c0177844ad.png","title":"508 - Loop Detected","arg":"508","subtitle":"The server terminated an operation because it encountered an infinite loop while processing a request with \"Depth: infinity\". This status indicates that the entire operation failed."},{"imagefile":"9b4798f4074f75ad90c9f9b53224a7c0177844ad.png","title":"510 - Not Extended","arg":"510","subtitle":"The policy for accessing the resource has not been met in the request. The server should send back all the information necessary for the client to issue an extended request."},{"imagefile":"9b4798f4074f75ad90c9f9b53224a7c0177844ad.png","title":"511 - Network Authentication Required","arg":"511","subtitle":"The client needs to authenticate to gain network access."},{"imagefile":"9b4798f4074f75ad90c9f9b53224a7c0177844ad.png","title":"599 - Network Connect Timeout Error","arg":"599","subtitle":"This status code is not specified in any RFCs, but is used by some HTTP proxies to signal a network connect timeout behind the proxy to a client in front of the proxy."}]</string>
+				<key>keyword</key>
+				<string>http</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Enter a status code</string>
+				<key>title</key>
+				<string>Search HTTP Status Codes</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>97EA3280-A6FD-40B9-8A2F-72B37144B52F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>How to use:
+
+To invoke alfred-http-status-codes, simply type http followed by the status code you would like more information about. The workflow will intelligently filter the status codes as you type, so if you enter http 2, alfred-http-status-codes will display all 200 status codes, along with their name, and a brief description. If you would like more in-depth information about a particular status code, simply hit enter to be taken to the https://httpstatuses.com/ page about that status code.</string>
+	<key>uidata</key>
+	<dict>
+		<key>97EA3280-A6FD-40B9-8A2F-72B37144B52F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>B23A1A21-D1E7-4C17-B82A-78888AA6C47F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://www.upsync.co.uk</string>
+</dict>
+</plist>
